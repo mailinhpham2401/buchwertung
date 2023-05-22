@@ -1,4 +1,9 @@
-# buchwertung_web
+# buchbewertung_web
+
+## Description
+```
+A Website to review and read reviews of books created with Vue.js
+```
 
 ## Project setup
 ```

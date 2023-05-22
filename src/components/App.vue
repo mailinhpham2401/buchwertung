@@ -3,11 +3,11 @@
     <h1 class="title">Book Reviews</h1>
     <form @submit.prevent="submitReview" class="form">
       <div class="form-group">
-        <label for="bookTitle">Title:</label>
+        <label for="bookTitle">Titel:</label>
         <input type="text" id="bookTitle" v-model="newReview.title" required>
       </div>
       <div class="form-group">
-        <label for="bookAuthor">Author:</label>
+        <label for="bookAuthor">Autor:</label>
         <input type="text" id="bookAuthor" v-model="newReview.author" required>
       </div>
       <div class="form-group">
@@ -22,18 +22,18 @@
         </select>
       </div>
       <div class="form-group">
-        <label for="reviewText">Review:</label>
+        <label for="reviewText">Bewertung:</label>
         <textarea id="reviewText" v-model="newReview.text" required></textarea>
       </div>
       <div class="form-group">
-        <button type="submit" class="submit-btn">Submit Review</button>
+        <button type="submit" class="submit-btn">Absenden</button>
       </div>
     </form>
     <div class="reviews">
-      <h2 class="subtitle">Reviews:</h2>
+      <h2 class="subtitle">Bewertungen:</h2>
       <div v-for="review in reviews" :key="review.id" class="review">
         <h3 class="review-title">{{ review.title }}</h3>
-        <p class="review-author">By: {{ review.author }}</p>
+        <p class="review-author">Von: {{ review.author }}</p>
         <p class="review-rating">Rating: {{ review.rating }}</p>
         <p class="review-text">{{ review.text }}</p>
       </div>
@@ -73,6 +73,7 @@ export default {
     margin: 0 auto;
     padding: 20px;
     background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .title {
@@ -103,7 +104,7 @@ export default {
   input[type="text"],
   textarea,
   select {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     border-radius: 5px;
     border: 1px solid #ccc;
