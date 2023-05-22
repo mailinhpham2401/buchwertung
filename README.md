@@ -1,4 +1,4 @@
-# buchwertung_web
+# buchbewertung webseite
 
 ## Project setup
 ```
